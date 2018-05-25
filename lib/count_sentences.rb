@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    self.split(".?!")
+    self.split("")
     if self.length > 0
       self.length
     elsif self.length == nil
