@@ -27,11 +27,5 @@ class String
   end
 
   def count_sentences
-    self.split(".")
-    if self.length > 0
-      self.length
-    elsif self.length == nil
-      "0"
-    end
+    self.split(/[.!?]/).reject {|x| x.empty?}.size
   end
-end
