@@ -30,7 +30,6 @@ class String
     self.split(".?!")
     if self.length > 0
       self.length
-      binding.pry
     elsif self.length == nil
       "0"
     end
